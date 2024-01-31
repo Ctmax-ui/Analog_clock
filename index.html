@@ -8,20 +8,29 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 
 <body class="text-center">
 
-    <button class="btn btn-outline-dark mt-2 mb-4">Dark Mode</button>
+    <!-- <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label> -->
 
-    <div class="container main-div d-flex justify-content-evenly">
+    <button class="btn btn-outline-dark mt-2 mb-4" id="theme-changer">Dark Mode</button>
 
-        <div class="date-time-box mt-4">
-            <div class="time">12:4</div><br>
-            <div class="date">fev 30</div>
+    <div class="container main-div d-flex justify-content-center">
+
+        <div class="date-time-box ">
+            <div class="digital-time"></div><br>
+            <div class="digital-date"></div>
         </div>
 
-        <div class="whole-wraper ">
+        <div class="whole-wraper">
 
             <div class="clock-outer-circle border border-2 border-dark">
                 <div class="dial-12"><i class="fa-solid fa-minus"></i></div>
@@ -30,21 +39,23 @@
                 <div class="dial-9 ms-1"><i class="fa-solid fa-minus"></i></div>
                 <div class="clock-dial border border-2 border-dark">
                     <div class="center-of-circle bg-dark">
+
                         <div class="hour border border-2 border-dark"></div>
                         <div class="minute border border-2 border-dark"></div>
                         <div class="second bg-dark"></div>
+
                     </div>
                 </div>
             </div>
 
 
 
-            
+
         </div>
 
     </div>
 
-
+    
 
 
 

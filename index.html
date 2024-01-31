@@ -7,26 +7,39 @@
     <title>Js Analoge Clock</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body class="text-center">
 
-    <div class="container main-div d-flex justify-content-center align-items-center">
-        <div class="whole-wraper">
-            <div class="clock-outer-circle">
-                <div class="dial-12">I</div>
-                <div class="dial-3 me-1">-</div>
-                <div class="dial-6 mb-1">I</div>
-                <div class="dial-9 ms-1">-</div>
-                <div class="clock-dial">
-                    <div class="center-of-circle">
-                        <div class="hour"></div>
-                        <div class="minute"></div>
-                        <div class="second"></div>
+    <button class="btn btn-outline-dark mt-2 mb-4">Dark Mode</button>
+
+    <div class="container main-div d-flex justify-content-evenly">
+
+        <div class="date-time-box mt-4">
+            <div class="time">12:4</div><br>
+            <div class="date">fev 30</div>
+        </div>
+
+        <div class="whole-wraper ">
+
+            <div class="clock-outer-circle border border-2 border-dark">
+                <div class="dial-12"><i class="fa-solid fa-minus"></i></div>
+                <div class="dial-3 me-1"><i class="fa-solid fa-minus"></i></div>
+                <div class="dial-6 mt-1"><i class="fa-solid fa-minus"></i></div>
+                <div class="dial-9 ms-1"><i class="fa-solid fa-minus"></i></div>
+                <div class="clock-dial border border-2 border-dark">
+                    <div class="center-of-circle bg-dark">
+                        <div class="hour border border-2 border-dark"></div>
+                        <div class="minute border border-2 border-dark"></div>
+                        <div class="second bg-dark"></div>
                     </div>
                 </div>
             </div>
 
+
+
+            
         </div>
 
     </div>

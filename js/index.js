@@ -4,15 +4,15 @@ let second = document.getElementsByClassName("second")[0];
 
 setInterval(function currentTime(){
     let now = new Date();
-    let h = now.getHours() % 12;
+    let h = now.getHours() ;
     let m = now.getMinutes();
     let s = now.getSeconds();
 
 
 
-console.log(s, scale(s, 0, 60, 0, 360));
+console.log(h, scale(s, 0, 60, 0, 360));
 
-    hours.style = `rotate: ${scale(h, 0, 11, 0, 180)-30}deg`;
+    hours.style = `rotate: ${scale(h, 0, 24, 0, 360)}deg`;
     minute.style = `rotate: ${scale(m, 0, 60, 0, 360)-149}deg`;
     second.style = `rotate: ${scale(s, 0, 60, 0, 360)-149}deg`;
 

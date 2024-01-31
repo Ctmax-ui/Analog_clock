@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main-div {
+    height: 100vh !important;
+}
+
+.clock-outer-circle {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #242424;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dial-12, .dial-3, .dial-6, .dial-9{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.dial-12{
+    top: 0;
+}
+.dial-3{
+    right: 0;
+}
+.dial-6{
+    bottom: 0;
+}
+.dial-9{
+    left: 0;
+}
+
+.clock-dial {
+    width: 260px;
+    height: 260px;
+    border: 2px solid #242424;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center-of-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #242424;
+    border-radius: 50%;
+    /* display: none; */
+}
+
+.hour {
+    position: absolute;
+margin: 9px 0 0 4.4px;
+    width: 12px;
+    height: 70px;
+    background-color: rgb(128, 50, 50);
+    border: 1px solid #242424;
+    transform-origin: top center;
+    z-index: -3;
+    /* rotate: 0deg; */
+    /* display: none; */
+    border-radius: 0 0 100% 100%;
+}
+
+.minute {
+    position: absolute;
+    margin: 9px 0 0 6px;
+    width: 8px;
+    height: 110px;
+    /* background-color: blueviolet; */
+    border: 1px solid #242424;
+    transform-origin: top center;
+    border-radius: 0 0 20px 20px;
+    z-index: -2;
+    rotate: 30deg;
+    /* display: none; */
+}
+
+.second {
+    margin: 9px 0 0 6px;
+    position: absolute;
+    width: 7px;
+    height: 120px;
+    background-color: rgb(255, 0, 0);
+    /* border: 1px solid #242424; */
+    transform-origin: top center;
+
+    z-index: -1;
+    rotate: 180deg;
+    /* display: none; */
+}

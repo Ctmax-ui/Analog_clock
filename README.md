@@ -7,7 +7,7 @@ Html, CSS, JavaScript, Bootstrap 5.
 ### Project Link: https://ctmax-ui.github.io/Analog_clock/
 
 
-I realy appricate Mapping this function.
+I really appricate this Mapping function.
 <code>
 
     function scale(number, inMin, inMax, outMin, outMax) {

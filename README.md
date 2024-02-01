@@ -9,11 +9,13 @@ Html, CSS, JavaScript, Bootstrap 5.
 
 I realy appricate Mapping this function.
 <code>
+
     function scale(number, inMin, inMax, outMin, outMax) {
         return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
     };
 
-    Ex: scale(h % 12, 0, 12, 0, 359)
+    scale(h % 12, 0, 12, 0, 359);
+    
 </code>
 
 #### Description about this function: 
@@ -24,7 +26,8 @@ In essence, the function allows you to convert or map values from one scale to a
 
  ### How did i get date and time: 
  <code>
- let now = new Date();
+     
+    let now = new Date();
     let h = now.getHours();
     let m = now.getMinutes();
     let s = now.getSeconds();
@@ -33,6 +36,7 @@ In essence, the function allows you to convert or map values from one scale to a
     let week = now.getDay();
     let date = now.getDate();
     let amorpm = h <= 12 ? "AM" : "PM";
+    
 </code>
 
 

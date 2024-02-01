@@ -34,8 +34,8 @@ setInterval(function currentTime() {
 
     function scale(number, inMin, inMax, outMin, outMax) {
         return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
-    }
-}, 1000)
+    };
+}, 1000);
 
 
 
@@ -45,29 +45,30 @@ modeChangerBtn.addEventListener("click" ,colorChanger);
 
 function colorChanger(){
 
-    modeChangerBtn.classList.toggle("bg-white")
-    modeChangerBtn.classList.toggle("text-dark")
-    document.body.classList.toggle("bg-dark")
+    modeChangerBtn.classList.toggle("bg-white");
+    modeChangerBtn.classList.toggle("text-dark");
+    document.body.classList.toggle("bg-dark");
 
-    document.querySelector(".main-heading").classList.toggle("text-white")
-    document.querySelector(".slider").classList.toggle("border-dark")
-    document.querySelector(".text-change-theme").classList.toggle("text-white")
-    document.querySelector(".date-time-box").classList.toggle("border-white")
-    document.querySelector(".digital-time").classList.toggle("text-white")
-    document.querySelector(".digital-date").classList.toggle("text-white")
-    document.querySelector(".clock-outer-circle").classList.toggle("border-white")
-    document.querySelector(".clock-dial").classList.toggle("border-white")
-    document.querySelector(".center-of-circle").classList.toggle("bg-white")
+    document.querySelector(".main-heading").classList.toggle("text-white");
+    document.querySelector(".slider").classList.toggle("border-dark");
+    document.querySelector(".text-change-theme").classList.toggle("text-white");
+    document.querySelector(".date-time-box").classList.toggle("border-white");
+    document.querySelector(".digital-time").classList.toggle("text-white");
+    document.querySelector(".digital-date").classList.toggle("text-white");
+    document.querySelector(".clock-outer-circle").classList.toggle("border-white");
+    document.querySelector(".clock-dial").classList.toggle("border-white");
+    document.querySelector(".center-of-circle").classList.toggle("bg-white");
 
     let allIcon = document.querySelectorAll(".clock-outer-circle i")
     allIcon.forEach(e=> {
         e.classList.toggle("text-white");
     });
-    document.querySelector(".hour").classList.toggle("border-white")
-    document.querySelector(".minute").classList.toggle("border-white")
-    document.querySelector(".second").classList.toggle("bg-white")
-    document.querySelector(".second").classList.toggle("neon-bg")
+
+    document.querySelector(".hour").classList.toggle("border-white");
+    document.querySelector(".minute").classList.toggle("border-white");
+    document.querySelector(".second").classList.toggle("bg-white");
+    document.querySelector(".second").classList.toggle("neon-bg");
     
 
-}
+};
 

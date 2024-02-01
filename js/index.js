@@ -29,7 +29,7 @@ setInterval(function currentTime() {
 
     hours.style = `transform: rotateZ(${scale(h % 12, 0, 12, 0, 359)}deg);`;
     minute.style = `transform: rotateZ(${scale(m, 0, 59, 0, 359)}deg);`;
-    second.style = `transform: rotateZ(${scale(s, 0, 59, 0, 359)}deg);`;
+    second.style = `transform: rotateZ(${scale(s, 0, 60, 0, 360)}deg);`;
 
 
     function scale(number, inMin, inMax, outMin, outMax) {
@@ -48,12 +48,17 @@ function colorChanger(){
     modeChangerBtn.classList.toggle("bg-white")
     modeChangerBtn.classList.toggle("text-dark")
     document.body.classList.toggle("bg-dark")
+
+    document.querySelector(".main-heading").classList.toggle("text-white")
+    document.querySelector(".slider").classList.toggle("border-dark")
+    document.querySelector(".text-change-theme").classList.toggle("text-white")
     document.querySelector(".date-time-box").classList.toggle("border-white")
     document.querySelector(".digital-time").classList.toggle("text-white")
     document.querySelector(".digital-date").classList.toggle("text-white")
     document.querySelector(".clock-outer-circle").classList.toggle("border-white")
     document.querySelector(".clock-dial").classList.toggle("border-white")
     document.querySelector(".center-of-circle").classList.toggle("bg-white")
+
     let allIcon = document.querySelectorAll(".clock-outer-circle i")
     allIcon.forEach(e=> {
         e.classList.toggle("text-white");

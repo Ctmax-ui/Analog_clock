@@ -8,6 +8,9 @@ body{
     height: 100vh !important;
 }
 
+.text-change-theme{
+    font-family: "Bungee", sans-serif;
+}
 
 
 .date-time-box{
@@ -17,7 +20,7 @@ body{
     position: relative;
     border-radius: 10px;
     padding-top: 100px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .digital-time{
@@ -40,7 +43,9 @@ body{
 }
 
 
-
+.whole-wraper{
+    width: fit-content;
+}
 .clock-outer-circle {
     width: 350px;
     height: 350px;
@@ -119,9 +124,7 @@ body{
     transform-origin: top center;
     rotate: 180deg;
     z-index: -3;
-    
 }
-
 .minute {
     position: absolute;
     top: 50%;
@@ -132,13 +135,11 @@ body{
     border-radius: 0 0 20px 20px;
     z-index: -2;
     rotate: 180deg;
-    /* display: none; */
 }
 
 .second {
     top: 50%;
     left: 49.5%;
-    
     position: absolute;
     width: 4px;
     height: 120px;
@@ -146,9 +147,6 @@ body{
     border-radius: 0 0 900% 900%;
     z-index: -1;
     rotate: 180deg;
-    /* display: none; */
-    transition: all .2s linear;
-
 }
 
 .neon-bg{
@@ -156,7 +154,7 @@ body{
         0 0 15px #0ff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
 }
 
@@ -183,7 +181,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #1b1a1a;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -195,13 +193,13 @@ body{
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(152, 152, 152);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #ffffff;
   }
   
   input:focus + .slider {

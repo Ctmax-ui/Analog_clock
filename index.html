@@ -15,22 +15,23 @@
 </head>
 
 <body class="text-center">
+        <h1 class="main-heading">Analog Clock</h1>
 
-    <!-- <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label> -->
+    <label class="switch mt-3 ">
+        <input type="checkbox" id="theme-changer">
+        <span class="slider round border border-dark"></span>
+    </label>
+    <span class="text-change-theme">Change Theme</span>
 
-    <button class="btn btn-outline-dark mt-2 mb-4" id="theme-changer">Dark Mode</button>
 
-    <div class="container main-div d-flex justify-content-center">
+    <div class=" main-div d-md-flex justify-content-evenly">
 
-        <div class="date-time-box ">
+        <div class="date-time-box border border-2 border-dark mx-auto mx-md-0">
             <div class="digital-time"></div><br>
             <div class="digital-date"></div>
         </div>
 
-        <div class="whole-wraper">
+        <div class="whole-wraper mx-auto mx-md-0">
 
             <div class="clock-outer-circle border border-2 border-dark">
                 <div class="dial-12"><i class="fa-solid fa-minus"></i></div>

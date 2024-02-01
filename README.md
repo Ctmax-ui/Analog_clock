@@ -15,7 +15,6 @@ I realy appricate Mapping this function.
     };
 
     scale(h % 12, 0, 12, 0, 359);
-    
 </code>
 
 #### Description about this function: 
@@ -36,7 +35,6 @@ In essence, the function allows you to convert or map values from one scale to a
     let week = now.getDay();
     let date = now.getDate();
     let amorpm = h <= 12 ? "AM" : "PM";
-    
 </code>
 
 

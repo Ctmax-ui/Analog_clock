@@ -1,5 +1,5 @@
 # This is an analog clock with digital date and time.
-
+<img src="./analog-clock.png" />
 ## Technology I used:
 
 Html, CSS, JavaScript, Bootstrap 5.
